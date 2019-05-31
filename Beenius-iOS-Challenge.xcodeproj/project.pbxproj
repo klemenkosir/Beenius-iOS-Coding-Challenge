@@ -19,6 +19,8 @@
 		82C3A7C222A0DB1E00AB159F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7C122A0DB1E00AB159F /* Album.swift */; };
 		82C3A7C422A0DB6C00AB159F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7C322A0DB6C00AB159F /* Photo.swift */; };
 		82C3A7C722A0DC5D00AB159F /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7C622A0DC5D00AB159F /* UserCell.swift */; };
+		82C3A7C922A0E00D00AB159F /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7C822A0E00D00AB159F /* AlbumCell.swift */; };
+		82C3A7CB22A0E12700AB159F /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7CA22A0E12700AB159F /* AlbumsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		82C3A7C122A0DB1E00AB159F /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		82C3A7C322A0DB6C00AB159F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		82C3A7C622A0DC5D00AB159F /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		82C3A7C822A0E00D00AB159F /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		82C3A7CA22A0E12700AB159F /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				82C3A7BC22A0D9F700AB159F /* UsersViewController.swift */,
+				82C3A7CA22A0E12700AB159F /* AlbumsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				82C3A7C622A0DC5D00AB159F /* UserCell.swift */,
+				82C3A7C822A0E00D00AB159F /* AlbumCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,10 +197,12 @@
 				82C3A7C422A0DB6C00AB159F /* Photo.swift in Sources */,
 				82C3A7B622A0D79D00AB159F /* NetworkError.swift in Sources */,
 				82C3A7B822A0D7D100AB159F /* NetworkingManager.swift in Sources */,
+				82C3A7CB22A0E12700AB159F /* AlbumsViewController.swift in Sources */,
 				82C3A7C022A0DA9200AB159F /* User.swift in Sources */,
 				82C3A7BD22A0D9F700AB159F /* UsersViewController.swift in Sources */,
 				82C3A7C722A0DC5D00AB159F /* UserCell.swift in Sources */,
 				82C3A7A322A0D72100AB159F /* AppDelegate.swift in Sources */,
+				82C3A7C922A0E00D00AB159F /* AlbumCell.swift in Sources */,
 				82C3A7C222A0DB1E00AB159F /* Album.swift in Sources */,
 				82C3A7BA22A0D84300AB159F /* NetworkRequest.swift in Sources */,
 			);

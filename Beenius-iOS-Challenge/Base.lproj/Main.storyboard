@@ -61,6 +61,7 @@
                                     <outlet property="emailLabel" destination="PB2-EE-rB9" id="38P-GO-18e"/>
                                     <outlet property="nameLabel" destination="Irb-5O-Hag" id="D4K-Ud-9Fl"/>
                                     <outlet property="usernameLabel" destination="Fvi-Uz-ZXo" id="Lvu-xb-1rm"/>
+                                    <segue destination="iEQ-uS-uX4" kind="show" id="gdp-pa-2M7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -74,6 +75,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e09-I8-eXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-217" y="144"/>
+        </scene>
+        <!--Albums-->
+        <scene sceneID="fmj-GW-rbj">
+            <objects>
+                <tableViewController id="iEQ-uS-uX4" customClass="AlbumsViewController" customModule="Beenius_iOS_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="te9-ad-9js">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="albumCell" id="ihV-fK-qzP" customClass="AlbumCell" customModule="Beenius_iOS_Challenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ihV-fK-qzP" id="3ql-4P-zgJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02I-EB-wHG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjQ-ed-OKL">
+                                                    <rect key="frame" x="16" y="0.0" width="259.5" height="99.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8SL-Bn-wZ7">
+                                                    <rect key="frame" x="275.5" y="0.0" width="99.5" height="99.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="8SL-Bn-wZ7" secondAttribute="height" id="XXR-xI-hLR"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="0.0"/>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="02I-EB-wHG" secondAttribute="bottom" id="5wW-Sj-H7U"/>
+                                        <constraint firstItem="02I-EB-wHG" firstAttribute="leading" secondItem="3ql-4P-zgJ" secondAttribute="leading" id="N9E-KO-Adi"/>
+                                        <constraint firstAttribute="trailing" secondItem="02I-EB-wHG" secondAttribute="trailing" id="PpD-oE-eGS"/>
+                                        <constraint firstItem="02I-EB-wHG" firstAttribute="top" secondItem="3ql-4P-zgJ" secondAttribute="top" id="ix4-0s-6Zh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="JjQ-ed-OKL" id="2ip-c4-G91"/>
+                                    <outlet property="thumbnailImageView" destination="8SL-Bn-wZ7" id="Zac-At-m4b"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iEQ-uS-uX4" id="ToI-5F-CZa"/>
+                            <outlet property="delegate" destination="iEQ-uS-uX4" id="txh-RZ-1be"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Albums" id="VPk-XF-NZn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wrb-rO-zap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="S3M-ER-XB7">

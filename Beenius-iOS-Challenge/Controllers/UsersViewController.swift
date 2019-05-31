@@ -33,7 +33,7 @@ class UsersViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? AlbumsViewController,
             let selectedCell = sender as? UserCell {
-            destination.userId = selectedCell.user.id
+            destination.user = selectedCell.user
         }
     }
 

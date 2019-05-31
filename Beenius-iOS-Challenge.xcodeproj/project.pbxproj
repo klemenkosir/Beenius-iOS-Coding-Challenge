@@ -21,6 +21,13 @@
 		82C3A7C722A0DC5D00AB159F /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7C622A0DC5D00AB159F /* UserCell.swift */; };
 		82C3A7C922A0E00D00AB159F /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7C822A0E00D00AB159F /* AlbumCell.swift */; };
 		82C3A7CB22A0E12700AB159F /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7CA22A0E12700AB159F /* AlbumsViewController.swift */; };
+		82C3A7CE22A0E93C00AB159F /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7CD22A0E93C00AB159F /* PhotosViewController.swift */; };
+		82C3A7D022A0E97400AB159F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7CF22A0E97400AB159F /* PhotoCell.swift */; };
+		82C3A7D322A0EAAE00AB159F /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7D222A0EAAE00AB159F /* UIImageViewExtension.swift */; };
+		82C3A7D522A0EAE300AB159F /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7D422A0EAE300AB159F /* ImageDownloader.swift */; };
+		82C3A7D722A0EB8700AB159F /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7D622A0EB8700AB159F /* URLExtension.swift */; };
+		82C3A7D922A0EBA600AB159F /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7D822A0EBA600AB159F /* DispatchQueueExtension.swift */; };
+		82C3A7DB22A0EF7400AB159F /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7DA22A0EF7400AB159F /* PhotoDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +47,13 @@
 		82C3A7C622A0DC5D00AB159F /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		82C3A7C822A0E00D00AB159F /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		82C3A7CA22A0E12700AB159F /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		82C3A7CD22A0E93C00AB159F /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		82C3A7CF22A0E97400AB159F /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		82C3A7D222A0EAAE00AB159F /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		82C3A7D422A0EAE300AB159F /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		82C3A7D622A0EB8700AB159F /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		82C3A7D822A0EBA600AB159F /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
+		82C3A7DA22A0EF7400AB159F /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				82C3A7A222A0D72100AB159F /* AppDelegate.swift */,
+				82C3A7D122A0EA8D00AB159F /* Extensions */,
 				82C3A7C522A0DC3300AB159F /* Views */,
 				82C3A7BE22A0DA8900AB159F /* Models */,
 				82C3A7BB22A0D9E500AB159F /* Controllers */,
@@ -100,6 +115,8 @@
 			children = (
 				82C3A7BC22A0D9F700AB159F /* UsersViewController.swift */,
 				82C3A7CA22A0E12700AB159F /* AlbumsViewController.swift */,
+				82C3A7CD22A0E93C00AB159F /* PhotosViewController.swift */,
+				82C3A7DA22A0EF7400AB159F /* PhotoDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -119,8 +136,20 @@
 			children = (
 				82C3A7C622A0DC5D00AB159F /* UserCell.swift */,
 				82C3A7C822A0E00D00AB159F /* AlbumCell.swift */,
+				82C3A7CF22A0E97400AB159F /* PhotoCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		82C3A7D122A0EA8D00AB159F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				82C3A7D222A0EAAE00AB159F /* UIImageViewExtension.swift */,
+				82C3A7D422A0EAE300AB159F /* ImageDownloader.swift */,
+				82C3A7D622A0EB8700AB159F /* URLExtension.swift */,
+				82C3A7D822A0EBA600AB159F /* DispatchQueueExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,14 +224,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				82C3A7C422A0DB6C00AB159F /* Photo.swift in Sources */,
+				82C3A7D522A0EAE300AB159F /* ImageDownloader.swift in Sources */,
 				82C3A7B622A0D79D00AB159F /* NetworkError.swift in Sources */,
 				82C3A7B822A0D7D100AB159F /* NetworkingManager.swift in Sources */,
 				82C3A7CB22A0E12700AB159F /* AlbumsViewController.swift in Sources */,
+				82C3A7D922A0EBA600AB159F /* DispatchQueueExtension.swift in Sources */,
 				82C3A7C022A0DA9200AB159F /* User.swift in Sources */,
 				82C3A7BD22A0D9F700AB159F /* UsersViewController.swift in Sources */,
+				82C3A7D022A0E97400AB159F /* PhotoCell.swift in Sources */,
 				82C3A7C722A0DC5D00AB159F /* UserCell.swift in Sources */,
+				82C3A7D322A0EAAE00AB159F /* UIImageViewExtension.swift in Sources */,
 				82C3A7A322A0D72100AB159F /* AppDelegate.swift in Sources */,
 				82C3A7C922A0E00D00AB159F /* AlbumCell.swift in Sources */,
+				82C3A7CE22A0E93C00AB159F /* PhotosViewController.swift in Sources */,
+				82C3A7DB22A0EF7400AB159F /* PhotoDetailsViewController.swift in Sources */,
+				82C3A7D722A0EB8700AB159F /* URLExtension.swift in Sources */,
 				82C3A7C222A0DB1E00AB159F /* Album.swift in Sources */,
 				82C3A7BA22A0D84300AB159F /* NetworkRequest.swift in Sources */,
 			);

@@ -12,7 +12,7 @@ class AlbumsViewController: UITableViewController {
 
     private var albums: [Album] = []
     
-    var userId: Int!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ class AlbumsViewController: UITableViewController {
     }
     
     private func loadAlbums() {
-        Album.getAlbums(for: userId) { [weak self] result in
+        Album.getAlbums(for: user.id) { [weak self] result in
             guard let safeSelf = self else { return }
             switch result {
             case .success(let albums):
@@ -29,6 +29,13 @@ class AlbumsViewController: UITableViewController {
             case .failure(let error):
                 print(error)
             }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? PhotosViewController,
+            let selectedCell = sender as? AlbumCell {
+            destination.album = selectedCell.album
         }
     }
 

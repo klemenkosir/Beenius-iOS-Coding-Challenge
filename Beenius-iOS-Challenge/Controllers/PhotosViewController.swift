@@ -25,7 +25,26 @@ class PhotosViewController: UICollectionViewController {
             collectionView.reloadData()
         }
         else {
-            
+            album.getPhotos { [weak self] (result) in
+                guard let safeSelf = self else { return }
+                switch result {
+                case .success(let photos):
+                    safeSelf.album.photos = photos
+                    safeSelf.photos = photos
+                    safeSelf.collectionView.reloadData()
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? PhotoDetailsViewController,
+            let selectedCell = sender as? PhotoCell,
+            var photo = selectedCell.photo {
+            photo.parentAlbum = album
+            destination.photo = photo
         }
     }
 

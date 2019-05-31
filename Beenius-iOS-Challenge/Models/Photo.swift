@@ -15,4 +15,6 @@ struct Photo: Decodable {
     let url: URL
     let thumbnailUrl: URL
     
+    var parentAlbum: Album?
+    
 }

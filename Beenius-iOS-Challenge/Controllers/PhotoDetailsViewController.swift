@@ -11,23 +11,36 @@ import UIKit
 class PhotoDetailsViewController: UIViewController {
 
     @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var photoNameLabel: UILabel!
+    @IBOutlet private weak var albumNameLabel: UILabel!
+    @IBOutlet private weak var userLabel: UILabel!
+    @IBOutlet private weak var bottomViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var bottomView: UIView!
     
+    var photo: Photo!
+    
+    private var overlayVisible = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imageView.load(photo.url)
+        photoNameLabel.text = photo.title
+        albumNameLabel.text = photo.parentAlbum?.title
+        userLabel.text = photo.parentAlbum?.parentUser?.name
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tapGestureHandler(_ sender: Any) {
+        overlayVisible = !overlayVisible
+        self.navigationController?.setNavigationBarHidden(!overlayVisible, animated: true)
+        UIView.animate(withDuration: 0.2) {
+            if self.overlayVisible {
+                self.bottomViewBottomConstraint.constant = 0
+            }
+            else {
+                self.bottomViewBottomConstraint.constant = -self.bottomView.frame.size.height
+            }
+            self.view.layoutIfNeeded()
+        }
     }
-    */
-
 }

@@ -14,6 +14,7 @@ struct Album: Decodable {
     let title: String
     
     var photos: [Photo]?
+    var parentUser: User?
     
 }
 
@@ -21,12 +22,6 @@ extension Album {
     
     func getPhotos(_ completion: @escaping (Result<[Photo], Error>) -> Void) {
         NetworkingManager.shared.makeRequest(NetworkRequest.getPhotos(albumId: self.id)) { (result: Result<[Photo], Error>) in
-            switch result {
-            case .success(let p):
-                break
-            default:
-                break
-            }
             completion(result)
         }
     }

@@ -34,8 +34,10 @@ class AlbumsViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? PhotosViewController,
-            let selectedCell = sender as? AlbumCell {
-            destination.album = selectedCell.album
+            let selectedCell = sender as? AlbumCell,
+            var album = selectedCell.album {
+                album.parentUser = user
+                destination.album = album
         }
     }
 

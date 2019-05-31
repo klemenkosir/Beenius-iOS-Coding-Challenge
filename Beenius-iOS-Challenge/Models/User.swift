@@ -16,3 +16,11 @@ struct User: Decodable {
     let email: String
     
 }
+
+extension User {
+    
+    static func getUsers(_ completion: @escaping (Result<[User], Error>) -> Void) {
+        NetworkingManager.shared.makeRequest(NetworkRequest.getUsers, completion: completion)
+    }
+    
+}

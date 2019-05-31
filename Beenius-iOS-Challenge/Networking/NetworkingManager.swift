@@ -29,7 +29,7 @@ class NetworkingManager {
         urlRequest.httpMethod = request.httpMethod.rawValue
         urlRequest.allHTTPHeaderFields = request.headerFields
         urlRequest.httpBody = request.httpBody
-        
+
         let task = session.dataTask(with: urlRequest) { (data, response, error) in
             do {
                 if let d = data {

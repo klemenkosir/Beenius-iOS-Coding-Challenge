@@ -18,6 +18,7 @@
 		82C3A7C022A0DA9200AB159F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7BF22A0DA9200AB159F /* User.swift */; };
 		82C3A7C222A0DB1E00AB159F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7C122A0DB1E00AB159F /* Album.swift */; };
 		82C3A7C422A0DB6C00AB159F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7C322A0DB6C00AB159F /* Photo.swift */; };
+		82C3A7C722A0DC5D00AB159F /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7C622A0DC5D00AB159F /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		82C3A7BF22A0DA9200AB159F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		82C3A7C122A0DB1E00AB159F /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		82C3A7C322A0DB6C00AB159F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		82C3A7C622A0DC5D00AB159F /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				82C3A7A222A0D72100AB159F /* AppDelegate.swift */,
+				82C3A7C522A0DC3300AB159F /* Views */,
 				82C3A7BE22A0DA8900AB159F /* Models */,
 				82C3A7BB22A0D9E500AB159F /* Controllers */,
 				82C3A7B422A0D75800AB159F /* Networking */,
@@ -104,6 +107,14 @@
 				82C3A7C322A0DB6C00AB159F /* Photo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		82C3A7C522A0DC3300AB159F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				82C3A7C622A0DC5D00AB159F /* UserCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 				82C3A7B822A0D7D100AB159F /* NetworkingManager.swift in Sources */,
 				82C3A7C022A0DA9200AB159F /* User.swift in Sources */,
 				82C3A7BD22A0D9F700AB159F /* UsersViewController.swift in Sources */,
+				82C3A7C722A0DC5D00AB159F /* UserCell.swift in Sources */,
 				82C3A7A322A0D72100AB159F /* AppDelegate.swift in Sources */,
 				82C3A7C222A0DB1E00AB159F /* Album.swift in Sources */,
 				82C3A7BA22A0D84300AB159F /* NetworkRequest.swift in Sources */,

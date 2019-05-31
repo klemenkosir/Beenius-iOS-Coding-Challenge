@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		82C3A7A322A0D72100AB159F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7A222A0D72100AB159F /* AppDelegate.swift */; };
-		82C3A7A522A0D72100AB159F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7A422A0D72100AB159F /* ViewController.swift */; };
 		82C3A7A822A0D72100AB159F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C3A7A622A0D72100AB159F /* Main.storyboard */; };
 		82C3A7AA22A0D72300AB159F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C3A7A922A0D72300AB159F /* Assets.xcassets */; };
 		82C3A7AD22A0D72300AB159F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C3A7AB22A0D72300AB159F /* LaunchScreen.storyboard */; };
 		82C3A7B622A0D79D00AB159F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7B522A0D79D00AB159F /* NetworkError.swift */; };
 		82C3A7B822A0D7D100AB159F /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7B722A0D7D100AB159F /* NetworkingManager.swift */; };
 		82C3A7BA22A0D84300AB159F /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7B922A0D84300AB159F /* NetworkRequest.swift */; };
+		82C3A7BD22A0D9F700AB159F /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7BC22A0D9F700AB159F /* UsersViewController.swift */; };
+		82C3A7C022A0DA9200AB159F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7BF22A0DA9200AB159F /* User.swift */; };
+		82C3A7C222A0DB1E00AB159F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7C122A0DB1E00AB159F /* Album.swift */; };
+		82C3A7C422A0DB6C00AB159F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3A7C322A0DB6C00AB159F /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82C3A79F22A0D72100AB159F /* Beenius-iOS-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beenius-iOS-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C3A7A222A0D72100AB159F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82C3A7A422A0D72100AB159F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		82C3A7A722A0D72100AB159F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82C3A7A922A0D72300AB159F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82C3A7AC22A0D72300AB159F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +30,10 @@
 		82C3A7B522A0D79D00AB159F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		82C3A7B722A0D7D100AB159F /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		82C3A7B922A0D84300AB159F /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		82C3A7BC22A0D9F700AB159F /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		82C3A7BF22A0DA9200AB159F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		82C3A7C122A0DB1E00AB159F /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		82C3A7C322A0DB6C00AB159F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				82C3A7A222A0D72100AB159F /* AppDelegate.swift */,
+				82C3A7BE22A0DA8900AB159F /* Models */,
+				82C3A7BB22A0D9E500AB159F /* Controllers */,
 				82C3A7B422A0D75800AB159F /* Networking */,
-				82C3A7A422A0D72100AB159F /* ViewController.swift */,
 				82C3A7A622A0D72100AB159F /* Main.storyboard */,
 				82C3A7A922A0D72300AB159F /* Assets.xcassets */,
 				82C3A7AB22A0D72300AB159F /* LaunchScreen.storyboard */,
@@ -79,6 +86,24 @@
 				82C3A7B922A0D84300AB159F /* NetworkRequest.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		82C3A7BB22A0D9E500AB159F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				82C3A7BC22A0D9F700AB159F /* UsersViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		82C3A7BE22A0DA8900AB159F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82C3A7BF22A0DA9200AB159F /* User.swift */,
+				82C3A7C122A0DB1E00AB159F /* Album.swift */,
+				82C3A7C322A0DB6C00AB159F /* Photo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,10 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C3A7C422A0DB6C00AB159F /* Photo.swift in Sources */,
 				82C3A7B622A0D79D00AB159F /* NetworkError.swift in Sources */,
 				82C3A7B822A0D7D100AB159F /* NetworkingManager.swift in Sources */,
-				82C3A7A522A0D72100AB159F /* ViewController.swift in Sources */,
+				82C3A7C022A0DA9200AB159F /* User.swift in Sources */,
+				82C3A7BD22A0D9F700AB159F /* UsersViewController.swift in Sources */,
 				82C3A7A322A0D72100AB159F /* AppDelegate.swift in Sources */,
+				82C3A7C222A0DB1E00AB159F /* Album.swift in Sources */,
 				82C3A7BA22A0D84300AB159F /* NetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
